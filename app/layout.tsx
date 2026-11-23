@@ -24,11 +24,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col"><nav>
-  <Link href="/">Home</Link>{" "}
-  <Link href="/about">About</Link>{" "}
-  <Link href="/projects">Projects</Link>
-  </nav>
+      <body className="min-h-full flex flex-col"><nav style={{ display: "flex", gap: "16px" }}>
+  <Link href="/" style={{ textDecoration: "underline" }}>Home</Link>
+  <Link href="/about" style={{ textDecoration: "underline" }}>About</Link>
+  <Link href="/projects" style={{ textDecoration: "underline" }}>Projects</Link>
+</nav>
 {children}</body>
     </html>
   );
