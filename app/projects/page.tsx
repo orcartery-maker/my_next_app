@@ -8,9 +8,9 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <main>
-      <h1>Projects</h1>
-      <ul>
+    <main className="p-6">
+      <h1 className="text-3xl font-bold mb-4">Projects</h1>
+      <ul className="space-y-2">
         {projects.map((project) => (
           <li key={project.id}>
             <strong>{project.name}</strong>: {project.description}
